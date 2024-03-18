@@ -49,6 +49,7 @@ function updateDom(temperature, city, time, emoji, text) {
 
     emojifield.src = emoji
     weatherfield.innerText = text
+
 }
 
 fetchData(target)
@@ -62,6 +63,8 @@ function search(e){
     target=searchfield.value;
     fetchData(target)
     console.log(target);
+
+    searchfield.value="";
 }
 
 //function to get the  name of day

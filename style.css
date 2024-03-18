@@ -11,51 +11,73 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm2h7tHE1iZGRinrLlgYjDlSOSOBRKz-9S9g&usqp=CAU");
-    background-repeat: no-repeat;
+    background-image: url(weather-background.webp);
+
+    /* background-repeat: no-repeat; */
     background-position: center;
     background-size: cover;
+    
 }
 
 .weather{
-    /* background-color: #fff; */
-    color: #fff;
+    background:linear-gradient(lightblue,hotpink);
+    color:rgb(58, 20, 169);
     font-weight: 600;
-    padding: 3rem;
     border-radius: 15px;
     display: flex;
     align-items: center;
-    
+    flex-direction: column;
 }
 .weather1{
-    font-size: 50px;
+    font-size: 70px;
+padding: 10px 10px;
+border-radius: 20px;
+
 
 }
+.weather2{
+border-radius: 20px;
+padding: 10px 10px;
+color:yellow;
+}
 .weather p{
-    font-size: 16px;
+    font-size: 36px;
+    text-align: center;
 }
 .weather >div{
     margin: 0.625rem;
 }
 .weather span{
-    font-size: 18px;
+    font-size: 22px;
 }
 
+.weather3{
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 .weather3 span{
     margin: 13px;
+    font-size: 29px;
+    text-align: center;
 }
 .weather3 img{
     width: 280px;
 }
 nav{
-    height: 100px;
+    margin-top: -90px;
+    height: 12vh;
     box-shadow: 0 0 25px regb(0,0,0,0.18);
     bottom: 0%;
     width: 100%;
-    background-color: lawngreen;
+    /* background-color:; */
+    background:linear-gradient( aqua,purple);
+    /* color: #1c1cc5; */
+    
     display: flex;
     justify-content: center;
-    align-items: center;border-radius: 100px 100px ;
+    align-items: center;
 
 
 }
@@ -72,15 +94,18 @@ nav form{
     font-size: 25px;
     background-color: transparent;
     padding: 15px 0;
-    border-bottom:  2px solid white;
-    color:white;
+    border-bottom:  4px solid white;
+    color:yellow;
     width: 93%;
 
 }
 
+::placeholder {
+    color: white;
+    font-size: 25px;
+}
 nav form button{
     background: orange;
-    border-radius: 0 25px 25px 0;
     font-size: 20px;
     color: #fff;
 border: none;
